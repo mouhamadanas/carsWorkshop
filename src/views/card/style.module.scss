@@ -1,0 +1,78 @@
+@import "../../assets/colors.scss";
+
+.pagesContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    min-height: 85%;
+    background-color: $dark2;
+    box-shadow: -2px 2px 6px 2px rgba(0, 0, 0, 0.17), inset 0px 0px 4px 1px rgba(243, 239, 245, 0.12);
+    border-radius: 50px;
+    padding: 20px 50px 5px;
+
+    @media (max-width:900px) {
+        top: 45%;
+        transform: translate(-50%, 0);
+        left: 50%;
+        top: 50px;
+        width: 90%;
+        height: 80%;
+        height: auto;
+        padding: 20px 30px 5px;
+    }
+
+}
+
+.cardTitle {
+    color: $text;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.imageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.productImage {
+    border: 2px solid $light1;
+    border-radius: 12px;
+    width: 80%;
+
+    @media (max-width:900px) {
+        width: 100%;
+    }
+}
+
+.imageTitle {
+    color: $light1;
+    font-weight: 700;
+    font-size: 15px;
+    margin: 20px 0;
+}
+
+.closeButton,
+.saveButton,
+.newButton,
+.deleteButton {
+    width: 100%;
+    padding: 5px;
+    box-shadow: -2px 2px 6px 2px rgba(0, 0, 0, 0.17), inset 0px 0px 4px 1px rgba(243, 239, 245, 0.12);
+    border-radius: 10px;
+    background-color: $dark1;
+    color: $text;
+    border: none;
+    outline: none;
+    cursor: pointer
+}
+
+.closeButton {
+    background-color: $light2;
+}
+
+.saveButton {
+    background-color: #9E0000;
+}

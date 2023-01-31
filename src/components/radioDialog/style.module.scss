@@ -1,0 +1,20 @@
+@import "../../assets/colors.scss";
+
+
+.saveButton,
+.cancelButton {
+    width: 100%;
+    padding: 5px;
+    box-shadow: -2px 2px 6px 2px rgba(0, 0, 0, 0.17), inset 0px 0px 4px 1px rgba(243, 239, 245, 0.12);
+    border-radius: 10px;
+    background-color: $dark1;
+    color: $text;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.saveButton {
+    background-color: $light2;
+}
